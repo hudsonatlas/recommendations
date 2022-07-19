@@ -7,6 +7,8 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
 const routes: Routes = [
   { path: '', component: RecommendationsComponent },
   { path: 'new', component: RecommendationFormComponent },
+  { path: 'edit/:id', component: RecommendationFormComponent },
+  { path: 'del/:id', component: RecommendationFormComponent },
 ];
 
 @NgModule({ 

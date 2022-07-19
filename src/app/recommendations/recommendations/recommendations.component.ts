@@ -39,10 +39,20 @@ export class RecommendationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
   }
 
   onAdd() {
     this.router.navigate(['new'], { relativeTo: this.route });
+  }
+
+  onEdit(id: number) {
+    this.router.navigate(['edit', id], { relativeTo: this.route });
+  }
+
+  onDelete(id: number) {
+    this.recommendationsService.delete(id).subscribe();
+    window.location.reload();
   }
 }
 function DialogDataExampleDialog(DialogDataExampleDialog: any, arg1: { data: string; }) {
