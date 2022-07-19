@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/error-dialog.component';
 
@@ -14,11 +15,13 @@ import { RecommendationsService } from '../services/recommendations.service';
 export class RecommendationsComponent implements OnInit {
   
   recommendations$: Observable<Recommendations[]>;
-  displayedColumns: string[] = ['id', 'title', 'description',  'status'];
+  displayedColumns: string[] = ['id', 'title', 'description',  'status', 'actions'];
 
   constructor(
     private recommendationsService: RecommendationsService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     this.recommendations$ = this.recommendationsService.findAll()
     .pipe(
@@ -36,6 +39,10 @@ export class RecommendationsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  onAdd() {
+    this.router.navigate(['new'], { relativeTo: this.route });
   }
 }
 function DialogDataExampleDialog(DialogDataExampleDialog: any, arg1: { data: string; }) {

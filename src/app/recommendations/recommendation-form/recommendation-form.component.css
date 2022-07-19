@@ -1,0 +1,13 @@
+.full-width {
+    width: 100%;
+}
+
+mat-card {
+    margin: 2em auto;
+    max-width: 80%;
+}
+
+.min-width {
+    width: 100%;
+    min-width: 150px;
+}
