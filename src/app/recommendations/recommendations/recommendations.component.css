@@ -42,3 +42,7 @@ section {
   justify-content: center;
   width: 120px;
 }
+
+.button_plus {
+  padding: 7px 0 0 25%;
+}

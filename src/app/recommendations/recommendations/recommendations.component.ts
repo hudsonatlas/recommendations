@@ -54,6 +54,11 @@ export class RecommendationsComponent implements OnInit {
     this.recommendationsService.delete(id).subscribe();
     window.location.reload();
   }
+
+  onUpdate(id: number) {
+    this.recommendationsService.updateStatus(id).subscribe();
+    window.location.reload();
+  }
 }
 function DialogDataExampleDialog(DialogDataExampleDialog: any, arg1: { data: string; }) {
   throw new Error('Function not implemented.');

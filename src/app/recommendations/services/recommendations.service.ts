@@ -47,4 +47,11 @@ export class RecommendationsService {
       first()
     );
   }
+
+  updateStatus(id: number) {
+    return this.httpClient.patch<Recommendations>(`${this.API}/${id}`, id)
+    .pipe(
+      first()
+    );
+  }
 }
