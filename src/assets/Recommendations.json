@@ -1,0 +1,74 @@
+[
+	{
+		"id": 1,
+		"title": "nova york",
+		"description": "um lugar sensacional",
+		"friend_id": 1,
+		"status": "initiated",
+		"created_at": "2022-07-17T19:24:00.000000Z",
+		"updated_at": "2022-07-17T19:24:00.000000Z",
+		"friend": {
+			"id": 1,
+			"name": "hudson soares",
+			"cpf": "2345678",
+			"phone": "12345678",
+			"email": "hudson@teste.com",
+			"created_at": "2022-07-17T19:24:00.000000Z",
+			"updated_at": "2022-07-17T19:24:00.000000Z"
+		}
+	},
+	{
+		"id": 2,
+		"title": "nova york",
+		"description": "um lugar sensacional",
+		"friend_id": 3,
+		"status": "initiated",
+		"created_at": "2022-07-17T20:02:35.000000Z",
+		"updated_at": "2022-07-17T20:02:35.000000Z",
+		"friend": {
+			"id": 3,
+			"name": "raul seixas",
+			"cpf": "81100902651",
+			"phone": "2199999999",
+			"email": "hudson@teste.com",
+			"created_at": "2022-07-17T20:00:30.000000Z",
+			"updated_at": "2022-07-17T20:22:48.000000Z"
+		}
+	},
+	{
+		"id": 3,
+		"title": "nova york",
+		"description": "um lugar sensacional",
+		"friend_id": 3,
+		"status": "initiated",
+		"created_at": "2022-07-17T20:03:26.000000Z",
+		"updated_at": "2022-07-17T20:03:26.000000Z",
+		"friend": {
+			"id": 3,
+			"name": "raul seixas",
+			"cpf": "81100902651",
+			"phone": "2199999999",
+			"email": "hudson@teste.com",
+			"created_at": "2022-07-17T20:00:30.000000Z",
+			"updated_at": "2022-07-17T20:22:48.000000Z"
+		}
+	},
+	{
+		"id": 4,
+		"title": "nova york",
+		"description": "um lugar sensacional",
+		"friend_id": 3,
+		"status": "initiated",
+		"created_at": "2022-07-17T20:03:31.000000Z",
+		"updated_at": "2022-07-17T20:03:31.000000Z",
+		"friend": {
+			"id": 3,
+			"name": "raul seixas",
+			"cpf": "81100902651",
+			"phone": "2199999999",
+			"email": "hudson@teste.com",
+			"created_at": "2022-07-17T20:00:30.000000Z",
+			"updated_at": "2022-07-17T20:22:48.000000Z"
+		}
+	}
+]
